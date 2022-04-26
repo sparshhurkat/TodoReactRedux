@@ -22,12 +22,6 @@ const Todo = ({ todo, toggleTodo, removeTodo }) => (
       <ListItemIcon sx={{minWidth:"10", margin:"0"}} onClick={() => toggleTodo(todo.id)}>
     {todo && todo.completed ?  <CheckCircleOutlineRoundedIcon fontSize="large" /> : <RadioButtonUncheckedRoundedIcon fontSize="large" /> }{" "}
     </ListItemIcon >
-    {/* <ListItemButton
-      className={cx(
-        "todo-item__text",
-        todo && todo.completed && "todo-item__text--completed"
-      )}
-    > */}
       <ListItemText primary={
             <React.Fragment>
               <Typography
